@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/md_amber_100">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de Temperatura"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/temperatura"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/titulo"
+        android:hint="Ingrese la temperatura"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/temperatura"
+        android:entries="@array/grados"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/md_amber_600"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/black"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/perro"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/resultado"/>
+
+</RelativeLayout>

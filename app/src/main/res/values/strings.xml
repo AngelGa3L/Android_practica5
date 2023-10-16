@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica5</string>
+
+    <string-array name="grados">
+        <item>De Celsius a Kelvin</item>
+        <item>De Celsius a Fahrenheit</item>
+        <item>De Fahrenheit a Kelvin</item>
+    </string-array>
+</resources>
